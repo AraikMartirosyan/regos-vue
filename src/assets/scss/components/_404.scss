@@ -1,0 +1,73 @@
+.error-not-found {
+  background-color: $white;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .e404 {
+    font-size: 108px;
+    font-weight: 700;
+    color: #2d3e50;
+  }
+  .error-inner {
+    color: #333;
+    .image {
+      margin-bottom: 10px;
+      // responsive
+      @media #{$xxs-device} {
+        margin-bottom: 5px;
+      }
+    }
+    .heading-h3 {
+      color: #333 !important;
+      font-size: 32px;
+      font-weight: 700;
+      // responsive
+      @media #{$xxs-device} {
+        font-size: 25px;
+      }
+    }
+    .error-text {
+      color: #000 !important;
+      padding-top: 30px;
+      // responsive
+      @media #{$xxs-device} {
+        padding-top: 25px;
+      }
+      p {
+        color: #000 !important;
+        font-size: 18px;
+        line-height: 1.9;
+        max-width: 600px;
+        margin: 0 auto;
+        @media #{$xxs-device} {
+          font-size: 16px;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+.error-button-group {
+  margin-top: 30px;
+  .btn-submit {
+    margin-right: 15px;
+    padding: 18px 30px;
+    color: #fff;
+    background-color: #e8af36;
+    border-bottom: 2px solid #b6861f;
+    // responsive
+    @media #{$xxs-device} {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: darken($color: #e8af36, $amount: 10);
+      border-bottom: 2px solid #b6861f;
+      color: #fff;
+    }
+  }
+}
